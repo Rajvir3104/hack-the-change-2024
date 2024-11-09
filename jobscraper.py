@@ -2,14 +2,16 @@ import os
 import requests
 from dotenv import load_dotenv
 
+
 # Load environment variables from .env file
 load_dotenv()
 
 # Retrieve the API key
-api_key = os.getenv("SCRAPINGDOG_API_KEY")
+api_key = os.getenv("API_KEY")
 
 if not api_key:
     raise ValueError("API key not found in .env file.")
+
 
 url = "https://api.scrapingdog.com/indeed"
 job_search_url = "https://ca.indeed.com/jobs?q=entry+level&l=calgary%2C+ab&from=searchOnDesktopSerp&vjk=d30f3669868129c5"
