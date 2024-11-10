@@ -273,6 +273,16 @@
           "email": "welcome@hinton.ca",
           "website": "https://www.hinton.ca/"
         }
+      },
+      {
+        "name": "Debo Dam Home for Gifted Kids",
+        "location": "Calgary, AB",
+        "details": "A welcome gathering for new Canadians in Calgary, offering information on settlement services and community resources.",
+        "contact": {
+          "phone": "587-432-0901",
+          "email": "debodam.business@gmail.com",
+          "website": "https://www.debodam.com/"
+        }
       }
   ]
   
