@@ -1,143 +1,122 @@
 /* General Styles */
 body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1; /* Light gray background for contrast */
+}
 
-    margin: 0;
-    padding: 0;
-  }
-  
-  .translation-container {
-    width: 90%;
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* File Upload Section */
-  .file-upload-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-/* File Upload Button Styling */
-.file-upload-button {
+/* Container for translation tool */
+.translation-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for clean design */
+  border-radius: 12px; /* More rounded corners for a soft, modern look */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft, larger shadow for depth */
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Container hover effect */
+.translation-container:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Header Styles */
+.translation-h1 {
+  font-size: 2.5rem;
+  color: #00a7ef;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* File Upload Section */
+.file-upload-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+button, .file-upload-button, .file-upload-button-text {
   padding: 12px 25px;
   font-size: 1.1rem;
-  color: white;
-  background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient background for a modern feel */
+  font-weight: 600; /* Bold font for emphasis */
+  border-radius: 50px; /* More rounded for a modern feel */
   border: none;
-  border-radius: 30px; /* Rounded edges for a smooth look */
   cursor: pointer;
-  transition: all 0.3s ease-in-out; /* Smooth transition for all states */
+  transition: all 0.3s ease; /* Smooth transition for all states */
   box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Subtle shadow for depth */
-  font-weight: 600; /* Make the text slightly bolder */
+  text-transform: uppercase; /* Add uppercase text for uniformity */
 }
 
-/* Hover Effect */
+/* File Upload Button */
+.file-upload-button {
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Modern gradient background */
+}
+
 .file-upload-button:hover {
   background: linear-gradient(135deg, #0056b3, #004085); /* Darker gradient on hover */
-  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.4); /* Deeper shadow for hover state */
-  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.4); /* Deeper shadow for hover effect */
+  transform: translateY(-4px); /* Slight lift effect on hover */
 }
 
-/* Active/Pressed Effect */
 .file-upload-button:active {
-  background: linear-gradient(135deg, #004085, #003366); /* Even darker gradient when clicked */
-  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.2); /* Reduced shadow for the pressed effect */
-  transform: translateY(2px); /* Button slightly presses down */
+  background: linear-gradient(135deg, #004085, #003366); /* Even darker gradient on click */
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.2); /* Reduced shadow for pressed state */
+  transform: translateY(2px); /* Button presses down slightly */
 }
 
-/* Focus Effect (for accessibility) */
-.file-upload-button:focus {
-  outline: none; /* Remove the default outline */
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); /* Add focus ring to highlight the button */
+/* For the 'Choose File' Button (styled as Text button) */
+.file-upload-button-text {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Subtle depth */
 }
 
-  
-  /* Text Section */
-  .text-section {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .text-section h3 {
-    color: #444;
-  }
-  
-  .text-section p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  /* Translation Form */
-  .translation-form-container {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .translation-form-container select {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-  }
-  
-  .translation-form-container button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: #28a745;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .translation-form-container button:hover {
-    background-color: #218838;
-  }
-  
-  /* Loading Indicator */
-  .loading-indicator {
-    text-align: center;
-    font-size: 1.5rem;
-    color: #007bff;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
-  /* Responsive Styles */
-  @media screen and (max-width: 600px) {
-    .translation-container {
-      width: 95%;
-      padding: 15px;
-    }
-  
-    .title {
-      font-size: 2rem;
-    }
-  
-    .text-section p {
-      font-size: 1rem;
-    }
-  }
-  
+.file-upload-button-text:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.file-upload-button-text:active {
+  background-color: #004085;
+  transform: scale(1); /* Return to normal scale on click */
+}
+
+/* Translation Form Button */
+.translation-form-container button {
+  background-color: #28a745; /* Green button for translation */
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3); /* Green shadow */
+  transition: all 0.3s ease;
+}
+
+.translation-form-container button:hover {
+  background-color: #218838;
+  box-shadow: 0 6px 14px rgba(40, 167, 69, 0.4); /* Deepens shadow for hover effect */
+  transform: translateY(-4px); /* Slight lift effect */
+}
+
+.translation-form-container button:active {
+  background-color: #1e7e34;
+  box-shadow: 0 2px 6px rgba(40, 167, 69, 0.2); /* Reduces shadow when clicked */
+  transform: translateY(2px); /* Button presses down */
+}
+
+/* Loading Indicator */
+.loading-indicator {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+

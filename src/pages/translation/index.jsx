@@ -39,7 +39,7 @@ const Translation = () => {
 
   return (
     <div className="translation-container">
-      <h1>PDF Translation Tool</h1>
+      <h1 className="translation-h1">PDF Translation Tool</h1>
       <FileUpload onFileUpload={handleFileUpload} />
       {extractedText && (
         <div>
