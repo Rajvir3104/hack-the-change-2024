@@ -1,6 +1,6 @@
 // src/pages/maps.js
 import React from 'react';
-import GoogleMapComponent from '../components/googlemaps/GoogleMap.js';
+import GoogleMapComponent from '../../components/googlemaps/GoogleMap.js';
 
 const Maps = () => {
   return (

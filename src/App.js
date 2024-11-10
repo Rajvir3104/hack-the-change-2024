@@ -5,7 +5,9 @@ import Dashboard from "./pages/dashboard";
 import Employment from "./pages/employment";
 import EventPosting from "./pages/eventposting";
 import Homepage from "./pages/homepage";
+import Maps from "./pages/maps";
 import OrganizationPosting from "./pages/organization";
+
 
 import Translation from "./pages/translation";
 
@@ -23,7 +25,7 @@ function App() {
         <Route path="/organization" element={<OrganizationPosting />} />
         <Route path="/translation" element={<Translation />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        {/* <Route path="/maps" element={<Maps />} /> */}
+        <Route path="/maps" element={<Maps />} />
       </Routes>
     </Router>
   );
