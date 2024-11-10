@@ -1,0 +1,119 @@
+[
+    {
+      "name": "1000 Voices and Genesis Centre",
+      "address": "7556 Falconridge Blvd NE",
+      "phone": "403-930-3370",
+      "website": "http://1000voices.ca",
+      "description": "A gathering place offering community meetings, programs, cultural arts, and events. Provides workplace programs and career counselling."
+    },
+    {
+      "name": "ActionDignity",
+      "address": "915 – 33 Street NE",
+      "phone": "403-263-9900",
+      "website": "https://actiondignity.org/",
+      "description": "Facilitates the collective voice of Calgary’s ethno-cultural communities towards full civic participation and integration through collaborative action. Offers various youth programs for newcomers and immigrants."
+    },
+    {
+      "name": "Agapé Language Centre",
+      "address": "16 Bermuda Drive NW",
+      "phone": "403-516-1846",
+      "website": "http://agapelanguagecentre.com",
+      "email": "contact@agapelanguagecentre.com",
+      "description": "Offers Adult ESL and the Government LINC (Language Instruction for Newcomers to Canada) program with online classes available."
+    },
+    {
+      "name": "Bow Valley College",
+      "address": "345 - 6 Avenue SE",
+      "phone": "403-410-1400",
+      "toll_free": "1-866-428-2669",
+      "website": "http://bowvalleycollege.ca",
+      "description": "Provides programs and courses in English Language Learning and Immigrant Advancement to help newcomers gain skills for living, studying, and working in Canada."
+    },
+    {
+      "name": "Calgary Board of Education",
+      "address": "Kingsland Centre, 7430 – 5 Street SW",
+      "phone": "403-817-4000 Ext. 1",
+      "website": "http://www.cbe.ab.ca/welcome",
+      "description": "Calgary’s public school system. Assists non-Canadian citizen children with school registration and offers interpretation and translation support."
+    },
+    {
+      "name": "The Calgary Bridge Foundation for Youth",
+      "address": "5920 Macleod Trail SW",
+      "phone": "403-230-7745 Ext. 201",
+      "website": "http://cbfy.ca",
+      "description": "Provides services for immigrant and refugee youth and their families, including settlement assistance, information on community resources, and culturally sensitive services in over 30 languages."
+    },
+    {
+      "name": "Calgary Catholic Immigration Society",
+      "address": "1111 11 Avenue SW",
+      "phone": "403-262-2006",
+      "website": "http://ccisab.ca",
+      "description": "Offers settlement and integration services to newcomers and refugees, including employment assistance, language training, skills training, and advocacy through a multilingual team."
+    },
+    {
+      "name": "Calgary Catholic School District",
+      "address": "1000 Fifth Avenue SW",
+      "phone": "403-500-2000",
+      "website": "http://www.cssd.ab.ca",
+      "description": "Provides separate school registration for newcomers and offers support to immigrant youth and their families in adjusting to the Canadian school system."
+    },
+    {
+      "name": "Calgary Immigrant Women’s Association",
+      "address": "200, 138 4 Ave SE",
+      "phone": "403-263-4414",
+      "website": "http://ciwa-online.com",
+      "description": "Focuses on the needs of immigrant and refugee women, girls, and their families, offering settlement and integration services, language training, and employment support."
+    },
+    {
+      "name": "Calgary Public Library",
+      "phone": "403-260-2600",
+      "website": "http://calgarylibrary.ca",
+      "description": "Offers various library services, including special workshops and programs for newcomers, ESL resources, online courses, and community connections."
+    },
+    {
+      "name": "Calgary Region Immigrant Employment Council",
+      "address": "105 12 Avenue SE",
+      "phone": "587-894-7583",
+      "website": "http://criec.ca",
+      "description": "Connects newcomer professionals to strategies leading to successful employment outcomes."
+    },
+    {
+      "name": "Centre D’Accueil Pour Les Nouveaux Arrivants Francophones",
+      "address": "727 7 Ave SW",
+      "phone": "403-532-6334",
+      "website": "http://canaf.ca",
+      "description": "Supports Francophone newcomers in their integration and social and professional adaptation."
+    },
+    {
+      "name": "Centre for Newcomers",
+      "address": "1010, 999 36 Street NE",
+      "phone": "403-569-3325",
+      "website": "http://centrefornewcomers.ca",
+      "description": "Provides settlement and integration services, including needs assessment, orientation to life in Canada, and referrals to programs for language, employment, and more."
+    },
+    {
+      "name": "Maple Leaf Academy",
+      "address": "200, 731 – 6 Ave SW",
+      "phone": "403-262-8851",
+      "website": "http://www.mapleleafacademy.com",
+      "email": "esl@mapleleafacademy.com",
+      "description": "An English as a Second Language school offering full-time, part-time evening, and Saturday classes, including IRCC-funded programs for Permanent Residents or Refugees."
+    },
+    {
+      "name": "YWCA Calgary (SE)",
+      "address": "1715 17th Ave SE",
+      "phone": "403-263-1550",
+      "website": "http://www.ywcalgary.ca",
+      "email": "ywca@ywcalgary.ca",
+      "description": "Offers language, employment, and settlement training for newcomers and low-income families, including guidance on accessing various community services."
+    },
+    {
+      "name": "YMCA Calgary (SW)",
+      "address": "101 3 Street SW",
+      "phone": "403-237-9622",
+      "website": "http://www.ymcacalgary.org",
+      "email": "Ken.Lima-Coelho@calgary.ymca.ca",
+      "description": "Provides English language classes for newcomers, focusing on improving communication skills and offering various part-time classes during the day and evenings."
+    }
+  ]
+  
