@@ -1,6 +1,6 @@
 /* global google */
 
-import React, { useEffect, useRef, useState, useCallback } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 const GoogleMapComponent = () => {
   const [isScriptLoaded, setIsScriptLoaded] = useState(false);
@@ -135,19 +135,29 @@ const GoogleMapComponent = () => {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    searchPlaces(searchPrompt); // Trigger search when the user submits the form
+    searchPlaces(searchPrompt); // Trigger search when the user selects an option
   };
 
   return (
     <div>
       <form onSubmit={handleSearch} style={{ textAlign: 'center', margin: '20px' }}>
-        <input
-          type="text"
+        <select
           value={searchPrompt}
           onChange={(e) => setSearchPrompt(e.target.value)}
-          placeholder="Search for places (e.g., Mexican food)"
           style={{ padding: '10px', width: '300px' }}
-        />
+        >
+          <option value="">Select Cuisine</option>
+          <option value="Mexican food">Mexican food</option>
+          <option value="Italian food">Italian food</option>
+          <option value="Chinese food">Chinese food</option>
+          <option value="Indian food">Indian food</option>
+          <option value="Japanese food">Japanese food</option>
+          <option value="Thai food">Thai food</option>
+          <option value="Haitian food">Haitian food</option>
+          <option value="Japanese food">Japanese food</option>
+          <option value="Vietnamese food">Vietnamese food</option>
+          <option value="American food">American food</option>
+        </select>
         <button type="submit" style={{ padding: '10px', marginLeft: '10px' }}>
           Search
         </button>
