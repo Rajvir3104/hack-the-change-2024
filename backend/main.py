@@ -5,15 +5,18 @@ from boto3.dynamodb.conditions import Attr
 from botocore.exceptions import ClientError
 from dotenv import load_dotenv
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 load_dotenv()
 
 app = Flask(__name__)
 
+CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
+
 # Load AWS configuration from environment variables
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-REGION_NAME = 'us-east-2'#os.getenv('REGION_NAME')
+REGION_NAME = 'us-east-2'  # os.getenv('REGION_NAME')
 
 # Initialize DynamoDB resource
 dynamodb = boto3.resource(
@@ -45,14 +48,16 @@ def get_item_by_location():
 @app.route('/insert_item', methods=['POST'])
 def insert_item():
     data = request.json
-    
+
     # Map JSON fields to DynamoDB table fields
     item = {
         'Location': data.get('companyLocation'),
-        'DatePosted': data.get('jobPosting'),  # Assuming jobPosting is the date in this case
+        # Assuming jobPosting is the date in this case
+        'DatePosted': data.get('jobPosting'),
         'Title': data.get('jobTitle'),
         'CompanyName': data.get('companyName'),
-        'Desc': ' '.join(data.get('jobDescription', [])),  # Join description array into a single string
+        # Join description array into a single string
+        'Desc': ' '.join(data.get('jobDescription', [])),
         'Link': data.get('jobLink')
     }
 
