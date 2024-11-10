@@ -52,7 +52,7 @@ def get_standardized_db_items(table_name, relevant_fields):
 def standardize_json_data(json_data, relevant_fields, table_name):
     standardized_data = []
     for item in json_data:
-        if table_name == 'Organizations' or table_name == 'Events':
+        if table_name == 'Organizations':
             standardized_item = {
                 'Location': item.get('location'),
                 'Name': item.get('name'),
@@ -69,6 +69,15 @@ def standardize_json_data(json_data, relevant_fields, table_name):
                 'CompanyName': item.get('companyName'),
                 'Desc': ' '.join(item.get('jobDescription', [])),
                 'Link': item.get('jobLink')
+            }
+        elif table_name == 'Events':
+            standardized_item = {
+                'Location': item.get('location'),
+                'Description': item.get('description'),
+                'Email': item.get('contact', {}).get('email'),
+                'Name': item.get('name'),
+                'Phone': item.get('contact', {}).get('phone'),
+                'Website': item.get('contact', {}).get('website')
             }
         else:
             standardized_item = {}
