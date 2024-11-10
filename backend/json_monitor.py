@@ -1,7 +1,8 @@
-import os
 import json
-import boto3
+import os
 import time
+
+import boto3
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -32,21 +33,28 @@ RELEVANT_FIELDS = {
 }
 
 # Load JSON data from a file
+
+
 def load_json_data(file_path):
     with open(file_path, 'r') as f:
         return json.load(f)
 
 # Retrieve all items from the table and standardize by relevant fields
+
+
 def get_standardized_db_items(table_name, relevant_fields):
     table = dynamodb.Table(table_name)
     response = table.scan()
     items = response.get('Items', [])
 
     # Only keep relevant fields in each DynamoDB item
-    standardized_items = [{k: v for k, v in item.items() if k in relevant_fields} for item in items]
+    standardized_items = [
+        {k: v for k, v in item.items() if k in relevant_fields} for item in items]
     return standardized_items
 
 # Standardize JSON data by filtering only the relevant fields, including nested fields
+
+
 def standardize_json_data(json_data, relevant_fields, table_name):
     standardized_data = []
     for item in json_data:
@@ -72,19 +80,26 @@ def standardize_json_data(json_data, relevant_fields, table_name):
             standardized_item = {}
 
         # Filter the item to contain only relevant fields
-        standardized_data.append({k: v for k, v in standardized_item.items() if k in relevant_fields})
+        standardized_data.append(
+            {k: v for k, v in standardized_item.items() if k in relevant_fields})
     return standardized_data
 
 # Convert item to tuple for easy comparison
+
+
 def item_to_tuple(item, keys):
     return tuple(item[key] for key in keys if key in item)
 
 # Compare JSON items to DynamoDB items, returning only new ones
+
+
 def find_new_items(json_data, db_items, primary_keys):
     db_items_set = {item_to_tuple(item, primary_keys) for item in db_items}
     return [item for item in json_data if item_to_tuple(item, primary_keys) not in db_items_set]
 
 # Insert new items into DynamoDB
+
+
 def insert_new_items(table_name, new_items):
     table = dynamodb.Table(table_name)
     for item in new_items:
@@ -93,13 +108,17 @@ def insert_new_items(table_name, new_items):
             print(f"Inserted new item: {item}")
         except Exception as e:
             print(f"Failed to insert item: {item}, Error: {e}")
+
+
 def run_monitor():
     while True:
         main('Organizations')  # Change this argument to test with other tables
         main('JobPostings')  # Change this argument to test with other tables
         main('Events')  # Change this argument to test with other tables
-        time.sleep(300) # change this during testing
+        time.sleep(300)  # change this during testing
 # Main function to load, compare, and insert new items
+
+
 def main(table_name):
     json_file_path = os.path.join('..', f'{table_name.lower()}_results.json')
     primary_keys = PRIMARY_KEYS.get(table_name, [])
@@ -120,6 +139,7 @@ def main(table_name):
         insert_new_items(table_name, new_items)
     else:
         print("No new items to insert.")
+
 
 # Run the main function
 if __name__ == '__main__':

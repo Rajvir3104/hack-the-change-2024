@@ -1,6 +1,7 @@
 import os
-import boto3
 import subprocess
+
+import boto3
 from dotenv import load_dotenv
 from eventposting import eventpostingroutes
 from flask import Flask, g
@@ -19,6 +20,7 @@ AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 REGION_NAME = 'us-east-2'
 
+
 @app.before_request
 def before_request():
     # Initialize DynamoDB resource
@@ -29,6 +31,7 @@ def before_request():
         region_name=REGION_NAME
     )
 
+
 # Register blueprints with URL prefixes
 app.register_blueprint(jobpostingroutes)
 app.register_blueprint(eventpostingroutes)
@@ -36,6 +39,6 @@ app.register_blueprint(organizationroutes)
 
 if __name__ == '__main__':
     # Run `json_monitor.py` as a background process
-    subprocess.Popen(["python3", "json_monitor.py"])
+    # subprocess.Popen(["python3", "json_monitor.py"])
     # Start the Flask app
     app.run(debug=True)
