@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
 
-const ResourceCard = ({ Location, Name, Description, Phone, Email, Website }) => {
+const OrganizationCard = ({ Location, Name, Description, Phone, Email, Website }) => {
   return (
     <Card sx={{ maxWidth: 345, margin: 2, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
       <CardContent sx={{ flexGrow: 1, padding: 2 }}>
@@ -33,4 +33,4 @@ const ResourceCard = ({ Location, Name, Description, Phone, Email, Website }) =>
   );
 };
 
-export default ResourceCard;
+export default OrganizationCard;

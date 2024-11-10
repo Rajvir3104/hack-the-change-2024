@@ -82,6 +82,7 @@ body::-webkit-scrollbar {
   /* Style for buttons */
   .cta-button {
     padding: 12px 24px;
+    width: 96%;
     font-size: 16px;
     color: #fff;
     background-color: #00a7ef;

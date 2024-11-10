@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+
     margin: 0;
     padding: 0;
   }
@@ -29,20 +29,40 @@ body {
     margin: 20px 0;
   }
   
-  .file-upload-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .file-upload-button:hover {
-    background-color: #0056b3;
-  }
+/* File Upload Button Styling */
+.file-upload-button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  color: white;
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient background for a modern feel */
+  border: none;
+  border-radius: 30px; /* Rounded edges for a smooth look */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Smooth transition for all states */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* Subtle shadow for depth */
+  font-weight: 600; /* Make the text slightly bolder */
+}
+
+/* Hover Effect */
+.file-upload-button:hover {
+  background: linear-gradient(135deg, #0056b3, #004085); /* Darker gradient on hover */
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.4); /* Deeper shadow for hover state */
+  transform: translateY(-4px); /* Slight lift on hover */
+}
+
+/* Active/Pressed Effect */
+.file-upload-button:active {
+  background: linear-gradient(135deg, #004085, #003366); /* Even darker gradient when clicked */
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.2); /* Reduced shadow for the pressed effect */
+  transform: translateY(2px); /* Button slightly presses down */
+}
+
+/* Focus Effect (for accessibility) */
+.file-upload-button:focus {
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); /* Add focus ring to highlight the button */
+}
+
   
   /* Text Section */
   .text-section {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ResourceCard from '../../components/resourcecard'; // Assuming you have a component for displaying events
+import OrganizationCard from '../../components/organizationcard'; // Assuming you have a component for displaying events
 import './style.css';
 
 const OrganizationPosting = () => {
@@ -30,7 +30,7 @@ const OrganizationPosting = () => {
 
       {/* Render Event Cards */}
       {eventData.map((event, index) => (
-        <ResourceCard
+        <OrganizationCard
           key={index}
           Name={event.Name}
           Location={event.Location}

@@ -2,7 +2,8 @@ from boto3.dynamodb.conditions import Attr
 from botocore.exceptions import ClientError
 from flask import Blueprint, g, jsonify, request
 
-organizationroutes = Blueprint('organizationroutes', __name__, url_prefix='/Organizations')
+organizationroutes = Blueprint(
+    'organizationroutes', __name__, url_prefix='/Organizations')
 
 
 @organizationroutes.route('/get_item_by_location', methods=['GET'])
@@ -31,14 +32,18 @@ def insert_item():
 
     # Map JSON fields to DynamoDB table fields
     item = {
-        'Location': data.get('location'),  # Retrieves the location of the organization.
+        # Retrieves the location of the organization.
+        'Location': data.get('location'),
         'Name': data.get('name'),  # Retrieves the name of the organization.
-        'Description': data.get('description'),  # Retrieves the main description text.
-        'Phone': data.get('contact', {}).get('phone'),  # Accesses the phone number within the nested contact field.
-        'Email': data.get('contact', {}).get('email'),  # Accesses the email within the nested contact field.
-        'Website': data.get('contact', {}).get('website')  # Accesses the website within the nested contact field.
+        # Retrieves the main description text.
+        'Description': data.get('description'),
+        # Accesses the phone number within the nested contact field.
+        'Phone': data.get('contact', {}).get('phone'),
+        # Accesses the email within the nested contact field.
+        'Email': data.get('contact', {}).get('email'),
+        # Accesses the website within the nested contact field.
+        'Website': data.get('contact', {}).get('website')
     }
-
 
     try:
         # Insert item into DynamoDB table
@@ -50,7 +55,7 @@ def insert_item():
 
 @organizationroutes.route('/delete_all_items', methods=['DELETE'])
 def delete_all_items():
-    table = g.dynamodb.Table('Organization')
+    table = g.dynamodb.Table('Organizations')
 
     try:
         # Scan to get all items (scan is required to retrieve all items for deletion)

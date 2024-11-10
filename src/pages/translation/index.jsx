@@ -3,7 +3,7 @@ import FileUpload from "../../components/FileUpload";
 import { parsePDF } from "../../components/pdfParser";
 import { translateText } from "../../components/TranslateService";
 import TranslationForm from "../../components/TranslationForm";
-import "./style.css"; // Ensure the stylesheet is imported
+import "./style.css";
 
 const Translation = () => {
   const [extractedText, setExtractedText] = useState("");
@@ -37,9 +37,8 @@ const Translation = () => {
     }
   };
 
-
   return (
-    <div>
+    <div className="translation-container">
       <h1>PDF Translation Tool</h1>
       <FileUpload onFileUpload={handleFileUpload} />
       {extractedText && (
