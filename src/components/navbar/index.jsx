@@ -1,16 +1,9 @@
-import MenuIcon from '@mui/icons-material/Menu';
-import { AppBar, Button, Drawer, IconButton, List, ListItem, ListItemText, Toolbar, Typography } from '@mui/material';
-import React, { useState } from 'react';
+import { AppBar, Button, Toolbar, Typography } from '@mui/material';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import "./style.css";
 
 const Navbar = () => {
-  const [openDrawer, setOpenDrawer] = useState(false);
-
-  const toggleDrawer = (open) => {
-    setOpenDrawer(open);
-  };
-
   const menuItems = [
     { text: "Home", path: "/dashboard" },
     { text: "Events", path: "/culture" },
@@ -20,46 +13,34 @@ const Navbar = () => {
   ];
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#00a7ef' }}>
+    <AppBar position="static" sx={{ backgroundColor: '#3ABEF9', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
       <Toolbar>
-        <IconButton
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          onClick={() => toggleDrawer(true)}
-          sx={{ mr: 2 }}
-        >
-          <MenuIcon />
-        </IconButton>
-
-        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+        <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 'bold', fontSize: '1.5rem' }}>
           Pathways
         </Typography>
 
-        {/* Navbar Links for Desktop View */}
         <div className="navbar-links">
           {menuItems.map((item, index) => (
-            <Button key={index} color="inherit" component={Link} to={item.path}>
+            <Button
+              key={index}
+              color="inherit"
+              component={Link}
+              to={item.path}
+              sx={{
+                fontWeight: 'bold',
+                fontSize: '1rem',
+                margin: '0 10px',
+                '&:hover': {
+                  color: '#3ABEF9',
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                },
+              }}
+            >
               {item.text}
             </Button>
           ))}
         </div>
       </Toolbar>
-
-      {/* Drawer for Mobile Menu */}
-      <Drawer
-        anchor="left"
-        open={openDrawer}
-        onClose={() => toggleDrawer(false)}
-      >
-        <List>
-          {menuItems.map((item, index) => (
-            <ListItem button key={index} onClick={() => toggleDrawer(false)} component={Link} to={item.path}>
-              <ListItemText primary={item.text} />
-            </ListItem>
-          ))}
-        </List>
-      </Drawer>
     </AppBar>
   );
 };

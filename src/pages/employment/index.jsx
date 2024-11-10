@@ -24,20 +24,24 @@ const Employment = () => {
 
   return (
     <div className="employment-container">
+      <h1>Find Your Next Job Opportunity</h1>
       <input type="text" value={value} onChange={handleChange} placeholder="Enter location" />
 
-      {jobData.map((job, index) => (
-        <JobCard
-          key={index}
-          Title={job.Title}
-          CompanyName={job.CompanyName}
-          Desc={job.Desc}
-          Location={job.Location}
-          DatePosted={job.DatePosted}
-          Link={job.Link}
-          Image={job.Image}
-        />
-      ))}
+      {/* Job cards displayed in pairs */}
+      <div className="job-card-container">
+        {jobData.map((job, index) => (
+          <JobCard
+            key={index}
+            Title={job.Title}
+            CompanyName={job.CompanyName}
+            Desc={job.Desc}
+            Location={job.Location}
+            DatePosted={job.DatePosted}
+            Link={job.Link}
+            Image={job.Image}
+          />
+        ))}
+      </div>
     </div>
   );
 };
