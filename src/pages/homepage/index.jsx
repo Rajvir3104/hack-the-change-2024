@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Community_image from "../../assets/Community_Image.png";
 import Discover_image from "../../assets/Discover_Image.png";
 import Employment_image from "../../assets/Employment_Image.png";
 import videoPath from "../../assets/pathways-hero-clip.mp4";
 import Translation_image from "../../assets/Translation_Image.png";
+import GoogleTranslate from '../../components/GoogleTranslate.jsx'; // Import the GoogleTranslate component
 import './style.css';
 
 const Homepage = () => {
+  const [showTranslate, setShowTranslate] = useState(false);
+
   return (
     <div>
+      <GoogleTranslate isVisible={showTranslate} /> {/* Pass visibility state */}
       <div className="hero-container">
         <div className="hero-overlay">
           <div className="hero-content">
@@ -16,10 +20,15 @@ const Homepage = () => {
             <p>Your bridge to resources, community, and support.</p>
             <p>
               <button className="cta-button">Sign Up</button>
-              <button className="cta-button">Translate</button>
+              <button 
+                className="cta-button" 
+                onClick={() => setShowTranslate(prev => !prev)} // Toggle widget visibility
+              >
+                Translate
+              </button>
             </p>
             <p>Already have an account? <a href="/login" className='blue-tag-link'>Log-in</a></p>
-            </div>
+          </div>
         </div>
         <video autoPlay muted loop className="hero-video">
           <source src={videoPath} type="video/mp4" />
@@ -92,7 +101,6 @@ const Homepage = () => {
       <div className="footer">
        © 2024 Pathways.inc, All rights reserved.
       </div>
-
     </div>
   );
 }
