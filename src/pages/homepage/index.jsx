@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { gapi } from 'gapi-script';
-import React, { useEffect } from 'react';
 import Community_image from "../../assets/Community_Image.png";
 import Discover_image from "../../assets/Discover_Image.png";
 import Employment_image from "../../assets/Employment_Image.png";
