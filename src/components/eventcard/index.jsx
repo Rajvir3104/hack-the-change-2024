@@ -1,3 +1,4 @@
+import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -26,7 +27,9 @@ const EventCard = ({ Location, Name, Description, Phone, Email, Website }) => {
       </CardContent>
       <CardActions sx={{ padding: 2, justifyContent: 'center' }}>
         <Typography variant="body2" color="text.secondary">
-          {Website}
+          <Button size="small" href={Website} target="_blank" rel="noopener">
+            Take A Look!
+          </Button>
         </Typography>
       </CardActions>
     </Card>

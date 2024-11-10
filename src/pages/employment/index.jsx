@@ -24,7 +24,7 @@ const Employment = () => {
 
   return (
     <div className="employment-container">
-      <input type="text" value={value} onChange={handleChange} />
+      <input type="text" value={value} onChange={handleChange} placeholder="Enter location" />
 
       {jobData.map((job, index) => (
         <JobCard

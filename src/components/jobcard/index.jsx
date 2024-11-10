@@ -24,13 +24,13 @@ const JobCard = ({ Location, DatePosted, Title, CompanyName, Desc, Link }) => {
         <Typography variant="body2" color="text.secondary">
           Date Posted: {DatePosted}
         </Typography>
+        <CardActions sx={{ padding: 2, justifyContent: 'center' }}>
+          <Button size="small" href={Link} target="_blank" rel="noopener">
+            Apply
+          </Button>
+        </CardActions>
       </CardContent>
-      <CardActions sx={{ padding: 2, justifyContent: 'center' }}>
-        <Button size="small" href={Link} target="_blank" rel="noopener">
-          Apply
-        </Button>
-      </CardActions>
-    </Card>
+    </Card >
   );
 };
 

@@ -13,9 +13,9 @@ const Navbar = () => {
 
   const menuItems = [
     { text: "Home", path: "/dashboard" },
-    { text: "Culture", path: "/culture" },
+    { text: "Events", path: "/culture" },
     { text: "Employment", path: "/employment" },
-    { text: "Resources", path: "/resources" },
+    { text: "Organizations", path: "/resources" },
     { text: "Translator", path: "/translation" },
   ];
 

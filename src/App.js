@@ -5,7 +5,7 @@ import Dashboard from "./pages/dashboard";
 import Employment from "./pages/employment";
 import EventPosting from "./pages/eventposting";
 import Homepage from "./pages/homepage";
-import OrganizationPosting from "./pages/resources";
+import OrganizationPosting from "./pages/organization";
 
 import Translation from "./pages/translation";
 
