@@ -3,6 +3,7 @@ import FileUpload from "../../components/FileUpload";
 import { parsePDF } from "../../components/pdfParser";
 import TranslationForm from "../../components/TranslationForm";
 import { translateText } from "../../components/TranslateService";
+import "./style.css"; // Ensure the stylesheet is imported
 
 const Translation = () => {
   const [extractedText, setExtractedText] = useState("");
