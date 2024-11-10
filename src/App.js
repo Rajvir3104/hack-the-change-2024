@@ -6,7 +6,12 @@ import Dashboard from "./pages/dashboard";
 import Employment from "./pages/employment";
 import Homepage from "./pages/homepage";
 import Resources from "./pages/resources";
+
 import Translation from "./pages/translation";
+
+import Maps from "./pages/maps";
+
+
 
 function App() {
   return (
@@ -19,6 +24,7 @@ function App() {
         <Route path="/resources" element={<Resources />} />
         <Route path="/translation" element={<Translation />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/maps" element={<Maps />} />
       </Routes>
     </Router>
   );
