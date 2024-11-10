@@ -13,7 +13,7 @@ app = Flask(__name__)
 # Load AWS configuration from environment variables
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-REGION_NAME = os.getenv('REGION_NAME')
+REGION_NAME = 'us-east-2'#os.getenv('REGION_NAME')
 
 # Initialize DynamoDB resource
 dynamodb = boto3.resource(
@@ -51,6 +51,7 @@ def insert_item():
         'Location': data.get('companyLocation'),
         'DatePosted': data.get('jobPosting'),  # Assuming jobPosting is the date in this case
         'Title': data.get('jobTitle'),
+        'CompanyName': data.get('companyName'),
         'Desc': ' '.join(data.get('jobDescription', [])),  # Join description array into a single string
         'Link': data.get('jobLink')
     }
@@ -75,7 +76,7 @@ def delete_all_items():
             table.delete_item(
                 Key={
                     'Location': item['Location'],
-                    'DatePosted': item['PostedDate']
+                    'DatePosted': item['DatePosted']
                 }
             )
         return jsonify({'message': 'All items deleted successfully'}), 200
