@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import FileUpload from "../../components/FileUpload";
 import { parsePDF } from "../../components/pdfParser";
-import TranslationForm from "../../components/TranslationForm";
 import { translateText } from "../../components/TranslateService";
+import TranslationForm from "../../components/TranslationForm";
 import "./style.css"; // Ensure the stylesheet is imported
 
 const Translation = () => {
@@ -24,7 +24,7 @@ const Translation = () => {
 
   const handleTranslation = async () => {
     if (!extractedText) return;
-  
+
     setLoading(true); // Set loading state
     try {
       const translated = await translateText(extractedText, targetLanguage);
@@ -36,7 +36,7 @@ const Translation = () => {
       setLoading(false); // Reset loading state
     }
   };
-  
+
 
   return (
     <div>
