@@ -1,15 +1,14 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/navbar";
-import CultureCommunity from "./pages/culturecommunity";
 import Dashboard from "./pages/dashboard";
 import Employment from "./pages/employment";
+import EventPosting from "./pages/eventposting";
 import Homepage from "./pages/homepage";
 import Resources from "./pages/resources";
 
 import Translation from "./pages/translation";
 
-import Maps from "./pages/maps";
 
 
 
@@ -19,12 +18,12 @@ function App() {
       <ConditionalNavbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/culturecommunity" element={<CultureCommunity />} />
+        <Route path="/culture" element={<EventPosting />} />
         <Route path="/employment" element={<Employment />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/translation" element={<Translation />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/maps" element={<Maps />} />
+        {/* <Route path="/maps" element={<Maps />} /> */}
       </Routes>
     </Router>
   );

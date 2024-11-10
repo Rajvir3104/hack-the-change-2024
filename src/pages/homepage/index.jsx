@@ -5,7 +5,6 @@ import Discover_image from "../../assets/Discover_Image.png";
 import Employment_image from "../../assets/Employment_Image.png";
 import videoPath from "../../assets/pathways-hero-clip.mp4";
 import Translation_image from "../../assets/Translation_Image.png";
-import { default as LoginButton } from "../login"; // Import the LoginButton
 import './style.css';
 
 const clientId = process.env.REACT_APP_CLIENT_ID;
@@ -31,7 +30,8 @@ const Homepage = () => {
             <p>Your bridge to resources, community, and support.</p>
             <p>
               {/* Replace anchor tag with the LoginButton component */}
-              <LoginButton />
+              {/* <LoginButton /> */}
+              <button className="cta-button">Signup</button>
               <button className="cta-button">Translate</button>
             </p>
             <p>Already have an account? <a href="/login" className='blue-tag-link'>Log-in</a></p>
