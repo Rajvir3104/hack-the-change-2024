@@ -26,6 +26,8 @@ const OrganizationPosting = () => {
 
   return (
     <div className="event-posting-container">
+      <h1>Browse Organizations in Your Area</h1>
+
       <input type="text" value={value} onChange={handleChange} placeholder="Enter location" />
 
       {/* Render Event Cards */}

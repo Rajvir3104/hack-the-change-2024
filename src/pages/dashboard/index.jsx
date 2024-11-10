@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import pfp from "../../assets/pfp.jpg";
 import EventCard from '../../components/eventcard';
 import JobCard from '../../components/jobcard';
+import OrganizationCard from '../../components/organizationcard'; // Import the OrganizationCard
 import "./style.css";
 
 const Dashboard = () => {
     const [jobData, setJobData] = useState([]);
     const [eventData, setEventData] = useState([]);
+    const [organizationData, setOrganizationData] = useState([]);  // State for organizations
     const videos = [
         { id: 1, title: "", url: "https://www.youtube.com/embed/I6qkFNOVebo" },
         { id: 2, title: "", url: "https://www.youtube.com/embed/8q69_gDP9PU" },
@@ -33,6 +35,17 @@ const Dashboard = () => {
                     // Shuffle and select three random events
                     const shuffledEvents = data.sort(() => 0.5 - Math.random());
                     setEventData(shuffledEvents.slice(0, 3));
+                }
+            });
+
+        // Fetch organization data
+        fetch('http://localhost:5000/Organizations/get_item_by_location?location=') // You can replace 'AB' with a dynamic location if needed
+            .then(response => response.json())
+            .then(data => {
+                if (!data.error) {
+                    // Shuffle and select three random organizations
+                    const shuffledOrganizations = data.sort(() => 0.5 - Math.random());
+                    setOrganizationData(shuffledOrganizations.slice(0, 3));
                 }
             });
     }, []);
@@ -83,6 +96,23 @@ const Dashboard = () => {
                 </div>
             </div>
 
+            <div className="organization-section">
+                <h2>Featured Organizations</h2>
+                <div className="organization-cards">
+                    {organizationData.map((organization, index) => (
+                        <OrganizationCard
+                            key={index}
+                            Name={organization.Name}
+                            Location={organization.Location}
+                            Description={organization.Description}
+                            Phone={organization.Phone}
+                            Email={organization.Email}
+                            Website={organization.Website}
+                        />
+                    ))}
+                </div>
+            </div>
+
             <div className="video-section">
                 <h2>Some Inspiring Videos</h2>
                 <div className="video-cards">
@@ -103,7 +133,6 @@ const Dashboard = () => {
                 </div>
             </div>
         </div>
-
     );
 }
 

@@ -26,7 +26,7 @@ const EventPosting = () => {
 
   return (
     <div className="event-posting-container">
-      <h1>Browse Events in Your Area</h1>
+      <h1>Find Events in Your Area</h1>
 
       <input type="text" value={value} onChange={handleChange} placeholder="Enter location" />
 
