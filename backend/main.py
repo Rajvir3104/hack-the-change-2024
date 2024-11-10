@@ -6,6 +6,7 @@ from eventposting import eventpostingroutes
 from flask import Flask, g
 from flask_cors import CORS
 from jobposting import jobpostingroutes
+from organizationposting import organizationroutes
 
 load_dotenv()
 
@@ -30,8 +31,12 @@ def before_request():
     )
 
 
-app.register_blueprint(jobpostingroutes)
-app.register_blueprint(eventpostingroutes)
+# Register blueprints with URL prefixes
+app.register_blueprint(jobpostingroutes, url_prefix='/JobPostings')
+app.register_blueprint(eventpostingroutes, url_prefix='/Events')
+app.register_blueprint(organizationroutes, url_prefix='/Organizations')
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -2,10 +2,10 @@ from boto3.dynamodb.conditions import Attr
 from botocore.exceptions import ClientError
 from flask import Blueprint, g, jsonify, request
 
-jobpostingroutes = Blueprint('organizationroutes', __name__)
+organizationroutes = Blueprint('organizationroutes', __name__)
 
 
-@jobpostingroutes.route('/get_item_by_location', methods=['GET'])
+@organizationroutes.route('/get_item_by_location', methods=['GET'])
 def get_item_by_location():
     table = g.dynamodb.Table('Organizations')
 
@@ -23,7 +23,7 @@ def get_item_by_location():
         return jsonify({'error': str(e)}), 500
 
 
-@jobpostingroutes.route('/insert_item', methods=['POST'])
+@organizationroutes.route('/insert_item', methods=['POST'])
 def insert_item():
     table = g.dynamodb.Table('Organizations')
 
@@ -48,7 +48,7 @@ def insert_item():
         return jsonify({'error': str(e)}), 500
 
 
-@jobpostingroutes.route('/delete_all_items', methods=['DELETE'])
+@organizationroutes.route('/delete_all_items', methods=['DELETE'])
 def delete_all_items():
     table = g.dynamodb.Table('JobPostings')
 
