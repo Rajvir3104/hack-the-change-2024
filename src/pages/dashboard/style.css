@@ -1,0 +1,183 @@
+.dashboard {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Limit the container width to 800px */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.dashboard-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.profile-section h1 {
+    font-size: 3rem;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 2px solid #000;
+}
+
+.divider {
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: #ddd; /* Light grey color */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video-section, .job-section {
+    width: 100%;
+    max-width: 800px; /* Make these sections match the size of the events container */
+    margin-top: 20px;
+}
+
+.video-section h2, .job-section h2 {
+    color: #333;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.video-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.video-card iframe {
+    border-radius: 8px;
+}
+
+.video-card p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Job section styling */
+.job-section {
+    margin-top: 20px;
+}
+
+.job-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow cards to wrap into new rows */
+}
+
+.job-card, .event-card {
+    flex: 1 1 calc(33.333% - 20px); /* Ensures each card takes up equal space */
+    max-width: calc(33.333% - 20px);
+    height: 250px; /* Set a fixed height to make the cards more square */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Job and Event cards */
+.job-cards, .event-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px; /* Ensure the job cards and event cards have the same max-width */
+    margin: 0 auto;
+}
+
+.job-cards > *, .event-cards > * {
+    flex: 1;
+    max-width: calc(33.33% - 10px); /* Three items in a row with gap */
+}
+
+/* Video cards */
+.video-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.employment-container {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px; /* Match the width of other containers */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.employment-container h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333b4a;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.employment-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.job-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px; /* Ensure the job cards have the same max-width as other sections */
+    margin: 0 auto;
+}
+
+.job-card-container > div {
+    flex: 1 1 calc(50% - 20px); /* Two items per row */
+    max-width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .job-card-container > div {
+        flex: 1 1 100%; /* One item per row on smaller screens */
+        max-width: 100%;
+    }
+}

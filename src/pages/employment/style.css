@@ -1,15 +1,41 @@
 .employment-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    max-width: 1000px; /* Adjust as needed */
-    margin: 0 auto;
-    padding: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.employment-container h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333b4a;
+
+}
+
+.employment-container input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.job-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.job-card-container > div {
+  flex: 1 1 calc(50% - 20px); /* Two items per row */
+  max-width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .job-card-container > div {
+    flex: 1 1 100%; /* One item per row on smaller screens */
+    max-width: 100%;
   }
-  
-  @media (max-width: 768px) {
-    .employment-container {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}

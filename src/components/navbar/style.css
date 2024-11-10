@@ -1,0 +1,8 @@
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links .MuiButton-root {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}

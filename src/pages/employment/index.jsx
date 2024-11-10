@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import JobCard from '../../components/card';
+import JobCard from '../../components/jobcard';
 import './style.css';
 
 const Employment = () => {
@@ -7,7 +7,7 @@ const Employment = () => {
   const [value, setValue] = useState('');
 
   useEffect(() => {
-    fetch(`http://localhost:5000/get_item_by_location?location=${value === '' ? 'AB' : value}`)
+    fetch(`http://localhost:5000/JobPostings/get_item_by_location?location=${value === '' ? 'AB' : value}`)
       .then(response => response.json())
       .then(data => {
         if (data.error) {
@@ -24,19 +24,24 @@ const Employment = () => {
 
   return (
     <div className="employment-container">
-      <input type="text" value={value} onChange={handleChange} />
+      <h1>Find Your Next Job Opportunity</h1>
+      <input type="text" value={value} onChange={handleChange} placeholder="Enter location" />
 
-      {jobData.map((job, index) => (
-        <JobCard
-          key={index}
-          Title={job.Title}
-          Desc={job.Desc}
-          Location={job.Location}
-          DatePosted={job.DatePosted}
-          Link={job.Link}
-          Image={job.Image}
-        />
-      ))}
+      {/* Job cards displayed in pairs */}
+      <div className="job-card-container">
+        {jobData.map((job, index) => (
+          <JobCard
+            key={index}
+            Title={job.Title}
+            CompanyName={job.CompanyName}
+            Desc={job.Desc}
+            Location={job.Location}
+            DatePosted={job.DatePosted}
+            Link={job.Link}
+            Image={job.Image}
+          />
+        ))}
+      </div>
     </div>
   );
 };

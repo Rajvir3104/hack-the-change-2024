@@ -1,0 +1,288 @@
+[
+    {
+      "name": "Calgary Canadian Immigrant Newcomer Fair",
+      "location": "Calgary TELUS Convention Centre, Calgary, AB",
+      "details": "An event designed to assist immigrants in Calgary with resources and information to aid their settlement and integration.",
+      "contact": {
+        "email": "info@canadianimmigrant.ca",
+        "website": "https://www.canadianimmigrant.ca/careerfair/calgary"
+      }
+    },
+    {
+      "name": "Centre for Newcomers / Calgary Stampede Hiring Event",
+      "location": "Centre for Newcomers, Calgary, AB",
+      "details": "A hiring event in collaboration with the Calgary Stampede, offering job opportunities for newcomers.",
+      "contact": {
+        "phone": "403-569-3325",
+        "email": "info@centrefornewcomers.ca",
+        "website": "https://www.centrefornewcomers.ca/"
+      }
+    },
+    {
+      "name": "Lessons Learned: Newcomers Growing Tech Businesses in Canada",
+      "location": "MobSquad, Calgary, AB",
+      "details": "A session sharing experiences and insights from newcomers who have established tech businesses in Canada.",
+      "contact": {
+        "email": "info@mobsquad.io",
+        "website": "https://www.mobsquad.io/"
+      }
+    },
+    {
+      "name": "Yoga at the Park for Newcomers to Canada",
+      "location": "Prince's Island Park, Calgary, AB",
+      "details": "A series of yoga sessions aimed at helping newcomers to Canada relax and integrate into the community.",
+      "contact": {
+        "email": "yoga@calgary.ca",
+        "website": "https://www.calgary.ca/parks/princes-island-park.html"
+      }
+    },
+    {
+      "name": "Your Career: Driving Positive Impact",
+      "location": "Stikeman Elliott LLP, Calgary, AB",
+      "details": "A workshop focused on guiding newcomers to drive positive impact in their careers within Canada.",
+      "contact": {
+        "email": "careers@stikeman.com",
+        "website": "https://www.stikeman.com/"
+      }
+    },
+    {
+        "name": "Edmonton Newcomers Club Monthly Meeting",
+        "location": "Edmonton, AB",
+        "details": "A monthly gathering for newcomers to Edmonton to network, share experiences, and learn about local resources.",
+        "contact": {
+          "email": "info@edmontonnewcomersclub.com",
+          "website": "https://www.edmontonnewcomersclub.com/"
+        }
+      },
+      {
+        "name": "Red Deer Immigrant Centre Orientation Session",
+        "location": "Red Deer, AB",
+        "details": "An orientation session providing essential information and resources for newcomers settling in Red Deer.",
+        "contact": {
+          "phone": "403-346-8818",
+          "email": "info@rdic.ca",
+          "website": "https://www.rdic.ca/"
+        }
+      },
+      {
+        "name": "Lethbridge Family Services Newcomer Workshop",
+        "location": "Lethbridge, AB",
+        "details": "A workshop aimed at assisting newcomer families in Lethbridge with settlement services and community integration.",
+        "contact": {
+          "phone": "403-320-1589",
+          "email": "info@lfsfamily.ca",
+          "website": "https://www.lfsfamily.ca/"
+        }
+      },
+      {
+        "name": "Fort McMurray Multicultural Association Cultural Exchange",
+        "location": "Fort McMurray, AB",
+        "details": "An event promoting cultural exchange and understanding among newcomers and the local community in Fort McMurray.",
+        "contact": {
+          "phone": "780-791-5186",
+          "email": "info@fmmsa.ca",
+          "website": "https://www.fmmsa.ca/"
+        }
+      },
+      {
+        "name": "Grande Prairie Newcomers Networking Evening",
+        "location": "Grande Prairie, AB",
+        "details": "A networking evening for newcomers in Grande Prairie to connect with local professionals and community members.",
+        "contact": {
+          "phone": "780-538-4452",
+          "email": "info@gpnewcomers.ca",
+          "website": "https://www.gpnewcomers.ca/"
+        }
+      },
+      {
+        "name": "Brooks Immigrant Support Group Meet & Greet",
+        "location": "Brooks, AB",
+        "details": "A meet-and-greet event where newcomers to Brooks can connect with local support services and other immigrants.",
+        "contact": {
+          "phone": "403-362-0404",
+          "email": "support@bcis-brooks.ca",
+          "website": "https://bcis-brooks.ca/"
+        }
+      },
+      {
+        "name": "Medicine Hat Welcoming Community Event",
+        "location": "Medicine Hat, AB",
+        "details": "An event designed to welcome newcomers to Medicine Hat, offering resources and information on community services.",
+        "contact": {
+          "phone": "403-529-2221",
+          "email": "info@medicinehat.ca",
+          "website": "https://www.medicinehat.ca/"
+        }
+      },
+      {
+        "name": "Airdrie Multicultural Centre Open House",
+        "location": "Airdrie, AB",
+        "details": "An open house event at the Airdrie Multicultural Centre to introduce newcomers to local resources and community support.",
+        "contact": {
+          "phone": "403-912-0425",
+          "email": "contact@airdriemulticultural.ca",
+          "website": "https://www.airdriemulticultural.ca/"
+        }
+      },
+      {
+        "name": "St. Albert Newcomer Integration Workshop",
+        "location": "St. Albert, AB",
+        "details": "A workshop in St. Albert focused on helping newcomers understand local services, employment resources, and integration programs.",
+        "contact": {
+          "phone": "780-459-1682",
+          "email": "info@stalbertnewcomers.ca",
+          "website": "https://stalbertnewcomers.ca/"
+        }
+      },
+      {
+        "name": "Okotoks Community Connection Event for Newcomers",
+        "location": "Okotoks, AB",
+        "details": "A community connection event providing newcomers with information on local services, employment, and social connections in Okotoks.",
+        "contact": {
+          "phone": "403-938-8048",
+          "email": "welcome@okotoks.ca",
+          "website": "https://www.okotoks.ca/"
+        }
+      },
+      {
+        "name": "Lloydminster Cultural Diversity Night",
+        "location": "Lloydminster, AB",
+        "details": "An evening event celebrating cultural diversity, aimed at helping newcomers in Lloydminster feel welcome and connected.",
+        "contact": {
+          "phone": "780-875-6184",
+          "email": "diversity@lloydminster.ca",
+          "website": "https://www.lloydminster.ca/"
+        }
+      },
+      {
+        "name": "Camrose Newcomer Resource Fair",
+        "location": "Camrose, AB",
+        "details": "A resource fair in Camrose for newcomers to learn about community services, employment support, and cultural integration.",
+        "contact": {
+          "phone": "780-672-4426",
+          "email": "info@camrose.ca",
+          "website": "https://www.camrose.ca/"
+        }
+      },
+      {
+        "name": "Strathmore New Residents Orientation",
+        "location": "Strathmore, AB",
+        "details": "An orientation event to introduce new residents of Strathmore to local services, education, and employment opportunities.",
+        "contact": {
+          "phone": "403-934-3133",
+          "email": "orientation@strathmore.ca",
+          "website": "https://strathmore.ca/"
+        }
+      },
+      {
+        "name": "High River Welcome Evening for Newcomers",
+        "location": "High River, AB",
+        "details": "A welcome evening for newcomers to High River, featuring information on local services and community support.",
+        "contact": {
+          "phone": "403-652-2110",
+          "email": "welcome@highriver.ca",
+          "website": "https://www.highriver.ca/"
+        }
+      },
+      {
+        "name": "Lacombe Immigrant Information Session",
+        "location": "Lacombe, AB",
+        "details": "An informational session for immigrants to learn about resources available in Lacombe, including language support and employment.",
+        "contact": {
+          "phone": "403-782-6666",
+          "email": "info@lacombe.ca",
+          "website": "https://www.lacombe.ca/"
+        }
+      },
+      {
+        "name": "Wetaskiwin Newcomer Meet and Greet",
+        "location": "Wetaskiwin, AB",
+        "details": "An event where newcomers to Wetaskiwin can connect with local community leaders and learn about available services.",
+        "contact": {
+          "phone": "780-361-4400",
+          "email": "welcome@wetaskiwin.ca",
+          "website": "https://www.wetaskiwin.ca/"
+        }
+      },
+      {
+        "name": "Spruce Grove New Resident Orientation",
+        "location": "Spruce Grove, AB",
+        "details": "An orientation session for new residents of Spruce Grove, providing insights into local amenities and support networks.",
+        "contact": {
+          "phone": "780-962-7634",
+          "email": "orientation@sprucegrove.ca",
+          "website": "https://www.sprucegrove.org/"
+        }
+      },
+      {
+        "name": "Chestermere Cultural Connections Night",
+        "location": "Chestermere, AB",
+        "details": "An event promoting cultural exchange and understanding, designed to help newcomers feel connected to the Chestermere community.",
+        "contact": {
+          "phone": "403-207-7050",
+          "email": "info@chestermere.ca",
+          "website": "https://www.chestermere.ca/"
+        }
+      },
+      {
+        "name": "Beaumont Family Resource Centre Newcomers' Workshop",
+        "location": "Beaumont, AB",
+        "details": "A workshop hosted by the Family Resource Centre to provide information on family support and settlement services for newcomers.",
+        "contact": {
+          "phone": "780-929-1006",
+          "email": "resources@beaumont.ab.ca",
+          "website": "https://www.beaumont.ab.ca/"
+        }
+      },
+      {
+        "name": "Banff Newcomer Welcome Tour",
+        "location": "Banff, AB",
+        "details": "A guided tour and welcome session for newcomers to Banff, covering key resources and community information.",
+        "contact": {
+          "phone": "403-762-1200",
+          "email": "info@banff.ca",
+          "website": "https://www.banff.ca/"
+        }
+      },
+      {
+        "name": "Canmore Newcomer Social Night",
+        "location": "Canmore, AB",
+        "details": "A social night aimed at helping newcomers to Canmore connect with locals and learn about community services.",
+        "contact": {
+          "phone": "403-678-1500",
+          "email": "social@canmore.ca",
+          "website": "https://www.canmore.ca/"
+        }
+      },
+      {
+        "name": "Morinville Community Orientation for Newcomers",
+        "location": "Morinville, AB",
+        "details": "A community orientation session to help new residents of Morinville access local resources and support networks.",
+        "contact": {
+          "phone": "780-939-4361",
+          "email": "orientation@morinville.ca",
+          "website": "https://www.morinville.ca/"
+        }
+      },
+      {
+        "name": "Hinton Welcome Gathering for New Canadians",
+        "location": "Hinton, AB",
+        "details": "A welcome gathering for new Canadians in Hinton, offering information on settlement services and community resources.",
+        "contact": {
+          "phone": "780-865-6000",
+          "email": "welcome@hinton.ca",
+          "website": "https://www.hinton.ca/"
+        }
+      },
+      {
+        "name": "Debo Dam Home for Gifted Kids",
+        "location": "Calgary, AB",
+        "details": "A welcome gathering for new Canadians in Calgary, offering information on settlement services and community resources.",
+        "contact": {
+          "phone": "587-432-0901",
+          "email": "debodam.business@gmail.com",
+          "website": "https://www.debodam.com/"
+        }
+      }
+  ]
+  

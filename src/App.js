@@ -1,10 +1,14 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/navbar";
-import CultureCommunity from "./pages/culturecommunity";
+import Dashboard from "./pages/dashboard";
 import Employment from "./pages/employment";
+import EventPosting from "./pages/eventposting";
 import Homepage from "./pages/homepage";
-import Resources from "./pages/resources";
+import Maps from "./pages/maps";
+import OrganizationPosting from "./pages/organization";
+
+
 import Translation from "./pages/translation";
 
 // Import the LanguageContext and the LanguageProvider
@@ -22,9 +26,11 @@ function App() {
           <Route path="/employment" element={<Employment />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/translation" element={<Translation />} />
+          <Route path="/maps" element={<Maps />} />
         </Routes>
       </Router>
     </LanguageProvider>
+
   );
 }
 
