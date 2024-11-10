@@ -5,7 +5,7 @@ import Dashboard from "./pages/dashboard";
 import Employment from "./pages/employment";
 import EventPosting from "./pages/eventposting";
 import Homepage from "./pages/homepage";
-import Resources from "./pages/resources";
+import OrganizationPosting from "./pages/resources";
 
 import Translation from "./pages/translation";
 
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/culture" element={<EventPosting />} />
         <Route path="/employment" element={<Employment />} />
-        <Route path="/resources" element={<Resources />} />
+        <Route path="/resources" element={<OrganizationPosting />} />
         <Route path="/translation" element={<Translation />} />
         <Route path="/dashboard" element={<Dashboard />} />
         {/* <Route path="/maps" element={<Maps />} /> */}
