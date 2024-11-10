@@ -39,6 +39,6 @@ app.register_blueprint(organizationroutes)
 
 if __name__ == '__main__':
     # Run `json_monitor.py` as a background process
-    # subprocess.Popen(["python3", "json_monitor.py"])
+    subprocess.Popen(["python3", "json_monitor.py"])
     # Start the Flask app
     app.run(debug=True)

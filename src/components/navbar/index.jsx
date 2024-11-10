@@ -8,9 +8,9 @@ const Navbar = () => {
     { text: "Home", path: "/dashboard" },
     { text: "Events", path: "/culture" },
     { text: "Employment", path: "/employment" },
-    { text: "Organizations", path: "/resources" },
+    { text: "Organizations", path: "/organization" },
+    { text: "Explore", path: "/maps" },
     { text: "Translator", path: "/translation" },
-    { text: "Restaurants", path: "/maps" },
   ];
 
   return (
