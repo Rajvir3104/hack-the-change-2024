@@ -1,264 +1,272 @@
 [
-    {
-      "name": "Calgary Catholic Immigration Society (CCIS)",
-      "description": "A non-profit organization that provides settlement and integration services to immigrants and refugees in Calgary.",
-      "contact": {
-        "phone": "403-262-2006",
-        "email": "info@ccisab.ca",
-        "website": "https://www.ccisab.ca/"
-      },
-      "location": "Calgary"
+  {
+    "name": "Calgary Catholic Immigration Society (CCIS)",
+    "description": "A non-profit organization that provides settlement and integration services to immigrants and refugees in Calgary.",
+    "contact": {
+      "phone": "403-262-2006",
+      "email": "info@ccisab.ca",
+      "website": "https://www.ccisab.ca/"
     },
-    {
-      "name": "Immigrant Services Calgary",
-      "description": "Offers a wide range of programs and services to help newcomers settle and integrate into the Calgary community.",
-      "contact": {
-        "phone": "403-265-1120",
-        "email": "info@immigrantservicescalgary.ca",
-        "website": "https://www.immigrantservicescalgary.ca/"
-      },
-      "location": "Calgary"
+    "location": "Calgary"
+  },
+  {
+    "name": "Immigrant Services Calgary",
+    "description": "Offers a wide range of programs and services to help newcomers settle and integrate into the Calgary community.",
+    "contact": {
+      "phone": "403-265-1120",
+      "email": "info@immigrantservicescalgary.ca",
+      "website": "https://www.immigrantservicescalgary.ca/"
     },
-    {
-      "name": "Edmonton Immigrant Services Association (EISA)",
-      "description": "Provides settlement and integration services to newcomers in Edmonton, including language classes and employment support.",
-      "contact": {
-        "phone": "780-474-8445",
-        "email": "info@eisa-edmonton.org",
-        "website": "https://www.eisa-edmonton.org/"
-      },
-      "location": "Edmonton"
+    "location": "Calgary"
+  },
+  {
+    "name": "Edmonton Immigrant Services Association (EISA)",
+    "description": "Provides settlement and integration services to newcomers in Edmonton, including language classes and employment support.",
+    "contact": {
+      "phone": "780-474-8445",
+      "email": "info@eisa-edmonton.org",
+      "website": "https://www.eisa-edmonton.org/"
     },
-    {
-      "name": "Catholic Social Services - Immigration and Settlement Service",
-      "description": "Offers a variety of services to immigrants and refugees, including settlement support, family support, and language training.",
-      "contact": {
-        "phone": "780-424-3545",
-        "email": "info@cssalberta.ca",
-        "website": "https://newcomers.cssalberta.ca/"
-      },
-      "location": "Edmonton"
+    "location": "Edmonton"
+  },
+  {
+    "name": "Catholic Social Services - Immigration and Settlement Service",
+    "description": "Offers a variety of services to immigrants and refugees, including settlement support, family support, and language training.",
+    "contact": {
+      "phone": "780-424-3545",
+      "email": "info@cssalberta.ca",
+      "website": "https://newcomers.cssalberta.ca/"
     },
-    {
-      "name": "Care for Newcomers",
-      "description": "Assists immigrants and refugees in Red Deer with settlement and integration through various programs and services.",
-      "contact": {
-        "phone": "403-346-8818",
-        "email": "admin@carefornewcomers.ca",
-        "website": "https://www.carefornewcomers.ca/"
-      },
-      "location": "Red Deer"
+    "location": "Edmonton"
+  },
+  {
+    "name": "Care for Newcomers",
+    "description": "Assists immigrants and refugees in Red Deer with settlement and integration through various programs and services.",
+    "contact": {
+      "phone": "403-346-8818",
+      "email": "admin@carefornewcomers.ca",
+      "website": "https://www.carefornewcomers.ca/"
     },
-    {
-      "name": "Central Alberta Immigrant Women's Association (CAIWA)",
-      "description": "Provides support services to immigrant women and their families in Central Alberta, focusing on integration and empowerment.",
-      "contact": {
-        "phone": "403-341-3553",
-        "email": "info@caiwa.ca",
-        "website": "https://www.caiwa.ca/"
-      },
-      "location": "Red Deer"
+    "location": "Red Deer"
+  },
+  {
+    "name": "Central Alberta Immigrant Women's Association (CAIWA)",
+    "description": "Provides support services to immigrant women and their families in Central Alberta, focusing on integration and empowerment.",
+    "contact": {
+      "phone": "403-341-3553",
+      "email": "info@caiwa.ca",
+      "website": "https://www.caiwa.ca/"
     },
-    {
-        "name": "Action for Healthy Communities",
-        "description": "Provides programs to support newcomers in building their skills, integrating into the community, and accessing resources.",
-        "contact": {
-          "phone": "780-944-4687",
-          "email": "info@a4hc.ca",
-          "website": "https://a4hc.ca/"
-        },
-        "location": "Edmonton"
-      },
-      {
-        "name": "Bow Valley Immigration Partnership",
-        "description": "Aims to create a welcoming environment in the Bow Valley by supporting newcomers with various integration services.",
-        "contact": {
-          "phone": "403-609-3743",
-          "email": "info@bowvalleypartnership.ca",
-          "website": "https://bowvalleypartnership.ca/"
-        },
-        "location": "Canmore"
-      },
-      {
-        "name": "Centre d'Accueil et d'Intégration des Immigrants",
-        "description": "Supports French-speaking immigrants in Alberta with settlement services and community integration programs.",
-        "contact": {
-          "phone": "403-532-6334",
-          "email": "info@cana.ca",
-          "website": "https://www.cana.ca/"
-        },
-        "location": "Calgary"
-      },
-      {
-        "name": "Grande Prairie Centre for Newcomers",
-        "description": "Provides services and resources to help newcomers settle and connect with the Grande Prairie community.",
-        "contact": {
-          "phone": "780-538-4452",
-          "email": "info@gpcn.ca",
-          "website": "http://gpcn.ca/"
-        },
-        "location": "Grande Prairie"
-      },
-      {
-        "name": "Lethbridge Family Services - Immigrant Services",
-        "description": "Supports immigrants and refugees in their settlement journey with language, employment, and community connection programs.",
-        "contact": {
-          "phone": "403-320-1589",
-          "email": "info@lfsfamily.ca",
-          "website": "https://www.lfsfamily.ca/"
-        },
-        "location": "Lethbridge"
-      },
-      {
-        "name": "Lloydminster Newcomer Centre",
-        "description": "Offers settlement services, language assistance, and community connections for newcomers in the Lloydminster area.",
-        "contact": {
-          "phone": "780-875-9084",
-          "email": "info@lloydnewcomer.ca",
-          "website": "https://www.lloydnewcomer.ca/"
-        },
-        "location": "Lloydminster"
-      },
-      {
-        "name": "Sage Seniors Association - Multicultural Seniors Outreach",
-        "description": "Provides support for immigrant seniors, including social integration programs and information on accessing local services.",
-        "contact": {
-          "phone": "780-423-5510",
-          "email": "info@mysage.ca",
-          "website": "https://www.mysage.ca/"
-        },
-        "location": "Edmonton"
-      },
-      {
-        "name": "Taber & District Community Adult Learning Association",
-        "description": "Provides language and literacy programs for newcomers, supporting their integration into the local community.",
-        "contact": {
-          "phone": "403-223-1169",
-          "email": "info@tdcal.ca",
-          "website": "https://www.tdcal.ca/"
-        },
-        "location": "Taber"
-      },
-      {
-        "name": "Southern Alberta Ethnic Association",
-        "description": "Hosts multicultural events and provides support for newcomers to connect with their community.",
-        "contact": {
-          "phone": "403-320-1577",
-          "email": "info@saea.ca",
-          "website": "https://saea.ca/"
-        },
-        "location": "Lethbridge"
-      },
-      {
-        "name": "Brooks & County Immigration Services",
-        "description": "Supports newcomers in the Brooks area with settlement services, language training, and employment resources.",
-        "contact": {
-          "phone": "403-362-0404",
-          "email": "info@bcis-brooks.ca",
-          "website": "https://bcis-brooks.ca/"
-        },
-        "location": "Brooks"
-      },
-      {
-        "name": "Edmonton Catholic Social Services",
-        "description": "Provides settlement and family services for immigrants and refugees, offering support through various programs.",
-        "contact": {
-          "phone": "780-432-1137",
-          "email": "css@cssalberta.ca",
-          "website": "https://www.cssalberta.ca/"
-        },
-        "location": "Edmonton"
-      },
-      {
-        "name": "Calgary Immigrant Women’s Association (CIWA)",
-        "description": "Empowers immigrant women and girls through settlement, employment, and language programs tailored to meet their needs.",
-        "contact": {
-          "phone": "403-263-4414",
-          "email": "info@ciwa-online.com",
-          "website": "https://ciwa-online.com/"
-        },
-        "location": "Calgary"
-      },
-      {
-        "name": "Edmonton Region Immigrant Employment Council (ERIEC)",
-        "description": "Connects immigrants with local professionals and mentors to help newcomers integrate into the workforce.",
-        "contact": {
-          "phone": "780-497-8866",
-          "email": "info@eriec.ca",
-          "website": "https://eriec.ca/"
-        },
-        "location": "Edmonton"
-      },
-      {
-        "name": "Newcomer Centre for Wellbeing",
-        "description": "Offers social, mental health, and wellbeing services specifically tailored to newcomers adjusting to Canadian life.",
-        "contact": {
-          "phone": "587-415-2227",
-          "email": "info@ncwellbeing.org",
-          "website": "https://www.ncwellbeing.org/"
-        },
-        "location": "Calgary"
-      },
-      {
-        "name": "Alberta Global Talent",
-        "description": "Provides career counseling and job matching for skilled immigrants and internationally trained professionals.",
-        "contact": {
-          "phone": "403-774-7244",
-          "email": "info@albertaglobaltalent.ca",
-          "website": "https://www.albertaglobaltalent.ca/"
-        },
-        "location": "Calgary"
-      },
-      {
-        "name": "Windmill Microlending",
-        "description": "Provides microloans to immigrants and refugees to help them gain accreditation or training required to work in their fields.",
-        "contact": {
-          "phone": "1-855-423-2262",
-          "email": "info@teamwindmill.org",
-          "website": "https://windmillmicrolending.org/"
-        },
-        "location": "Edmonton"
-      },
-      {
-        "name": "Calgary Public Library - Newcomers Program",
-        "description": "Supports newcomers with language learning programs, job search workshops, and community orientation sessions.",
-        "contact": {
-          "phone": "403-260-2600",
-          "website": "https://calgarylibrary.ca/",
-          "email": "support@calgarylibrary.ca"
-        },
-        "location": "Calgary"
-      },
-      {
-        "name": "Multicultural Association of Wood Buffalo",
-        "description": "Offers services to promote cultural diversity and provide resources for newcomers in the Wood Buffalo region.",
-        "contact": {
-          "phone": "780-791-5186",
-          "email": "info@multiculturefm.org",
-          "website": "https://www.multiculturefm.org/"
-        },
-        "location": "Fort McMurray"
-      },
-      {
-        "name": "Edmonton Public Library - Welcome Baby Program",
-        "description": "Provides resources and programs to help immigrant parents and their children adjust to their new community.",
-        "contact": {
-          "phone": "780-496-7000",
-          "website": "https://www.epl.ca/",
-          "email": "services@epl.ca"
-        },
-        "location": "Edmonton"
-      },
-      {
-        "name": "Islamic Family and Social Services Association (IFSSA)",
-        "description": "Provides settlement services, social support, and resources for Muslim immigrants and refugees.",
-        "contact": {
-          "phone": "780-430-9220",
-          "email": "info@ifssa.ca",
-          "website": "https://ifssa.ca/"
-        },
-        "location": "Edmonton"
-      }
-
-  ]
-  
+    "location": "Red Deer"
+  },
+  {
+    "name": "Action for Healthy Communities",
+    "description": "Provides programs to support newcomers in building their skills, integrating into the community, and accessing resources.",
+    "contact": {
+      "phone": "780-944-4687",
+      "email": "info@a4hc.ca",
+      "website": "https://a4hc.ca/"
+    },
+    "location": "Edmonton"
+  },
+  {
+    "name": "Bow Valley Immigration Partnership",
+    "description": "Aims to create a welcoming environment in the Bow Valley by supporting newcomers with various integration services.",
+    "contact": {
+      "phone": "403-609-3743",
+      "email": "info@bowvalleypartnership.ca",
+      "website": "https://bowvalleypartnership.ca/"
+    },
+    "location": "Canmore"
+  },
+  {
+    "name": "Centre d'Accueil et d'Intégration des Immigrants",
+    "description": "Supports French-speaking immigrants in Alberta with settlement services and community integration programs.",
+    "contact": {
+      "phone": "403-532-6334",
+      "email": "info@cana.ca",
+      "website": "https://www.cana.ca/"
+    },
+    "location": "Calgary"
+  },
+  {
+    "name": "Grande Prairie Centre for Newcomers",
+    "description": "Provides services and resources to help newcomers settle and connect with the Grande Prairie community.",
+    "contact": {
+      "phone": "780-538-4452",
+      "email": "info@gpcn.ca",
+      "website": "http://gpcn.ca/"
+    },
+    "location": "Grande Prairie"
+  },
+  {
+    "name": "Lethbridge Family Services - Immigrant Services",
+    "description": "Supports immigrants and refugees in their settlement journey with language, employment, and community connection programs.",
+    "contact": {
+      "phone": "403-320-1589",
+      "email": "info@lfsfamily.ca",
+      "website": "https://www.lfsfamily.ca/"
+    },
+    "location": "Lethbridge"
+  },
+  {
+    "name": "Lloydminster Newcomer Centre",
+    "description": "Offers settlement services, language assistance, and community connections for newcomers in the Lloydminster area.",
+    "contact": {
+      "phone": "780-875-9084",
+      "email": "info@lloydnewcomer.ca",
+      "website": "https://www.lloydnewcomer.ca/"
+    },
+    "location": "Lloydminster"
+  },
+  {
+    "name": "Sage Seniors Association - Multicultural Seniors Outreach",
+    "description": "Provides support for immigrant seniors, including social integration programs and information on accessing local services.",
+    "contact": {
+      "phone": "780-423-5510",
+      "email": "info@mysage.ca",
+      "website": "https://www.mysage.ca/"
+    },
+    "location": "Edmonton"
+  },
+  {
+    "name": "Taber & District Community Adult Learning Association",
+    "description": "Provides language and literacy programs for newcomers, supporting their integration into the local community.",
+    "contact": {
+      "phone": "403-223-1169",
+      "email": "info@tdcal.ca",
+      "website": "https://www.tdcal.ca/"
+    },
+    "location": "Taber"
+  },
+  {
+    "name": "Southern Alberta Ethnic Association",
+    "description": "Hosts multicultural events and provides support for newcomers to connect with their community.",
+    "contact": {
+      "phone": "403-320-1577",
+      "email": "info@saea.ca",
+      "website": "https://saea.ca/"
+    },
+    "location": "Lethbridge"
+  },
+  {
+    "name": "Brooks & County Immigration Services",
+    "description": "Supports newcomers in the Brooks area with settlement services, language training, and employment resources.",
+    "contact": {
+      "phone": "403-362-0404",
+      "email": "info@bcis-brooks.ca",
+      "website": "https://bcis-brooks.ca/"
+    },
+    "location": "Brooks"
+  },
+  {
+    "name": "Edmonton Catholic Social Services",
+    "description": "Provides settlement and family services for immigrants and refugees, offering support through various programs.",
+    "contact": {
+      "phone": "780-432-1137",
+      "email": "css@cssalberta.ca",
+      "website": "https://www.cssalberta.ca/"
+    },
+    "location": "Edmonton"
+  },
+  {
+    "name": "Calgary Immigrant Women’s Association (CIWA)",
+    "description": "Empowers immigrant women and girls through settlement, employment, and language programs tailored to meet their needs.",
+    "contact": {
+      "phone": "403-263-4414",
+      "email": "info@ciwa-online.com",
+      "website": "https://ciwa-online.com/"
+    },
+    "location": "Calgary"
+  },
+  {
+    "name": "Edmonton Region Immigrant Employment Council (ERIEC)",
+    "description": "Connects immigrants with local professionals and mentors to help newcomers integrate into the workforce.",
+    "contact": {
+      "phone": "780-497-8866",
+      "email": "info@eriec.ca",
+      "website": "https://eriec.ca/"
+    },
+    "location": "Edmonton"
+  },
+  {
+    "name": "Newcomer Centre for Wellbeing",
+    "description": "Offers social, mental health, and wellbeing services specifically tailored to newcomers adjusting to Canadian life.",
+    "contact": {
+      "phone": "587-415-2227",
+      "email": "info@ncwellbeing.org",
+      "website": "https://www.ncwellbeing.org/"
+    },
+    "location": "Calgary"
+  },
+  {
+    "name": "Alberta Global Talent",
+    "description": "Provides career counseling and job matching for skilled immigrants and internationally trained professionals.",
+    "contact": {
+      "phone": "403-774-7244",
+      "email": "info@albertaglobaltalent.ca",
+      "website": "https://www.albertaglobaltalent.ca/"
+    },
+    "location": "Calgary"
+  },
+  {
+    "name": "Windmill Microlending",
+    "description": "Provides microloans to immigrants and refugees to help them gain accreditation or training required to work in their fields.",
+    "contact": {
+      "phone": "1-855-423-2262",
+      "email": "info@teamwindmill.org",
+      "website": "https://windmillmicrolending.org/"
+    },
+    "location": "Edmonton"
+  },
+  {
+    "name": "Calgary Public Library - Newcomers Program",
+    "description": "Supports newcomers with language learning programs, job search workshops, and community orientation sessions.",
+    "contact": {
+      "phone": "403-260-2600",
+      "website": "https://calgarylibrary.ca/",
+      "email": "support@calgarylibrary.ca"
+    },
+    "location": "Calgary"
+  },
+  {
+    "name": "Multicultural Association of Wood Buffalo",
+    "description": "Offers services to promote cultural diversity and provide resources for newcomers in the Wood Buffalo region.",
+    "contact": {
+      "phone": "780-791-5186",
+      "email": "info@multiculturefm.org",
+      "website": "https://www.multiculturefm.org/"
+    },
+    "location": "Fort McMurray"
+  },
+  {
+    "name": "Edmonton Public Library - Welcome Baby Program",
+    "description": "Provides resources and programs to help immigrant parents and their children adjust to their new community.",
+    "contact": {
+      "phone": "780-496-7000",
+      "website": "https://www.epl.ca/",
+      "email": "services@epl.ca"
+    },
+    "location": "Edmonton"
+  },
+  {
+    "name": "Islamic Family and Social Services Association (IFSSA)",
+    "description": "Provides settlement services, social support, and resources for Muslim immigrants and refugees.",
+    "contact": {
+      "phone": "780-430-9220",
+      "email": "info@ifssa.ca",
+      "website": "https://ifssa.ca/"
+    },
+    "location": "Edmonton"
+  },
+  {
+    "name": "Adeeb Hossain Inc",
+    "description": "Adeeb House",
+    "contact": {
+      "phone": "780-322-2222",
+      "email": "info@ifssa.ca",
+      "website": "https://ifssa.ca/"
+    },
+    "location": "Edmonton Area"
+  }
+]

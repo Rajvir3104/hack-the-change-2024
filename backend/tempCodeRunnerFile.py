@@ -9,7 +9,6 @@ from flask_cors import CORS
 from jobposting import jobpostingroutes
 from organizationposting import organizationroutes
 
-# Load environment variables
 load_dotenv()
 
 app = Flask(__name__)
@@ -39,15 +38,7 @@ app.register_blueprint(eventpostingroutes)
 app.register_blueprint(organizationroutes)
 
 if __name__ == '__main__':
-    # Ensure the environment variables are loaded
-    env = os.environ.copy()
-    env['AWS_ACCESS_KEY_ID'] = os.getenv('AWS_ACCESS_KEY_ID')
-    env['AWS_SECRET_ACCESS_KEY'] = os.getenv('AWS_SECRET_ACCESS_KEY')
-
-    # Use the absolute path for the python executable in the subprocess call
-    # Change this to your Python path if needed
-    python_executable = r"C:\Users\deboj\anaconda3\python.exe"
-    subprocess.Popen([python_executable, "json_monitor2.py"], env=env)
-
+    # Run `json_monitor.py` as a background process
+    subprocess.Popen(["python3", "json_monitor2.py"])
     # Start the Flask app
     app.run(debug=True)

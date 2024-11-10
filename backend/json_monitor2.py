@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# AWS Configuration
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 REGION_NAME = 'us-east-2'
@@ -19,7 +18,6 @@ dynamodb = boto3.resource(
     region_name=REGION_NAME
 )
 
-# Define primary keys and relevant fields for each table (excluding metadata)
 PRIMARY_KEYS = {
     'Organizations': ['Location'],
     'Events': ['Location'],
@@ -32,14 +30,10 @@ RELEVANT_FIELDS = {
     'JobPostings': ['Location', 'DatePosted', 'Title', 'CompanyName', 'Desc', 'Link']
 }
 
-# Load JSON data from a file
-
 
 def load_json_data(file_path):
     with open(file_path, 'r') as f:
         return json.load(f)
-
-# Retrieve all items from the table and standardize by relevant fields
 
 
 def get_standardized_db_items(table_name, relevant_fields):
@@ -115,7 +109,7 @@ def run_monitor():
         main('Organizations')  # Change this argument to test with other tables
         main('JobPostings')  # Change this argument to test with other tables
         main('Events')  # Change this argument to test with other tables
-        time.sleep(30)  # change this during testing
+        time.sleep(20)  # change this during testing
 # Main function to load, compare, and insert new items
 
 
