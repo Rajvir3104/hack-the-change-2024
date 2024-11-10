@@ -2,7 +2,7 @@ from boto3.dynamodb.conditions import Attr
 from botocore.exceptions import ClientError
 from flask import Blueprint, g, jsonify, request
 
-jobpostingroutes = Blueprint('jobpostingroutes', __name__)
+jobpostingroutes = Blueprint('jobpostingroutes', __name__, url_prefix='/JobPostings')
 
 
 @jobpostingroutes.route('/get_item_by_location', methods=['GET'])

@@ -2,7 +2,7 @@ from boto3.dynamodb.conditions import Attr
 from botocore.exceptions import ClientError
 from flask import Blueprint, g, jsonify, request
 
-organizationroutes = Blueprint('organizationroutes', __name__)
+organizationroutes = Blueprint('organizationroutes', __name__, url_prefix='/Organizations')
 
 
 @organizationroutes.route('/get_item_by_location', methods=['GET'])
@@ -50,7 +50,7 @@ def insert_item():
 
 @organizationroutes.route('/delete_all_items', methods=['DELETE'])
 def delete_all_items():
-    table = g.dynamodb.Table('JobPostings')
+    table = g.dynamodb.Table('Organization')
 
     try:
         # Scan to get all items (scan is required to retrieve all items for deletion)
