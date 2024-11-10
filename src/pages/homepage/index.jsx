@@ -12,7 +12,7 @@ const Homepage = () => {
 
   return (
     <div>
-      <GoogleTranslate isVisible={showTranslate} /> {/* Pass visibility state */}
+      <GoogleTranslate isVisible={showTranslate} />
       <div className="hero-container">
         <div className="hero-overlay">
           <div className="hero-content">
