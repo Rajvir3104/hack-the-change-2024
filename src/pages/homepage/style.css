@@ -1,0 +1,169 @@
+/* Hide scrollbar in Chrome, Safari, and other WebKit-based browsers */
+body::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+  }
+  
+  body {
+    overflow: scroll; /* Allows scrolling */
+  }
+  
+/* Hero Section Container */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  /* Background Video */
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+    z-index: -1; /* Places the video behind the content */
+    filter: blur(5px); /* Adjust the value for more or less blur */
+
+  }
+  
+  /* Overlay for better text visibility */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for text contrast */
+    z-index: 1;
+  }
+  
+  /* Content in the Hero Section */
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the content */
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  
+
+/* Styles for the call-to-action section */
+.call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between caption and buttons */
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  /* Style for the caption */
+  .cta-caption {
+    font-size: 72px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for buttons */
+  .cta-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00a7ef;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px; /* Add space between the buttons */
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .blue-tag {
+    color: #4bbded;
+  }
+
+  .translation-section{
+    display: flex;
+    justify-content: space-between; /* Distributes space between caption and button */
+    align-items: center; /* Vertically centers the items */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .employment-section{
+    display: flex;
+    justify-content: space-between; /* Distributes space between caption and button */
+    align-items: center; /* Vertically centers the items */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .culture-section{
+    display: flex;
+    justify-content: space-between; /* Distributes space between caption and button */
+    align-items: center; /* Vertically centers the items */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .discover-section{
+    display: flex;
+    justify-content: space-between; /* Distributes space between caption and button */
+    align-items: center; /* Vertically centers the items */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .section-break {
+    border: 0;
+    border-top: 1px solid #D3D3D3; /* Light grey color */
+    margin: 20px auto; /* Centers the line horizontally and adds vertical spacing */
+    width: 60%;
+  }
+
+  /* Footer styles */
+.footer {
+    background-color: #333; /* Dark grey background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add padding around the footer */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Ensure the footer spans the entire width of the page */
+    font-size: 14px; /* Adjust font size as needed */
+  }
+  
+
+  a.blue-tag-link {
+    color: #00a7ef; /* Blue color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  a.blue-tag-link:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
