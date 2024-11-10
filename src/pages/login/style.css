@@ -1,0 +1,16 @@
+.custom-login-button {
+    font-size: 14px; /* Smaller font size */
+    padding: 8px 16px; /* Adjust padding for smaller button */
+    border-radius: 4px; /* Rounded corners */
+    width: auto; /* Adjust width */
+    height: auto; /* Adjust height */
+    display: inline-block; /* Ensure the button does not take up full width */
+    background-color: #4285f4; /* Google's blue color or your custom color */
+    color: white; /* Text color */
+    border: none;
+    cursor: pointer;
+}
+
+.custom-login-button:hover {
+    background-color: #3367d6; /* Darker shade on hover */
+}
