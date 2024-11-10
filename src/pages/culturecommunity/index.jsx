@@ -8,7 +8,7 @@ const EventPosting = () => {
 
   // Fetch events based on location (similar to JobPosting component)
   useEffect(() => {
-    fetch(`http://localhost:5000/get_item_by_location?location=${value === '' ? 'AB' : value}`)
+    fetch(`http://localhost:5000/Events/get_item_by_location?location=${value === '' ? 'AB' : value}`)
       .then(response => response.json())
       .then(data => {
         if (data.error) {

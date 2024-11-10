@@ -7,7 +7,7 @@ const Employment = () => {
   const [value, setValue] = useState('');
 
   useEffect(() => {
-    fetch(`http://localhost:5000/get_item_by_location?location=${value === '' ? 'AB' : value}`)
+    fetch(`http://localhost:5000/JobPostings/get_item_by_location?location=${value === '' ? 'AB' : value}`)
       .then(response => response.json())
       .then(data => {
         if (data.error) {

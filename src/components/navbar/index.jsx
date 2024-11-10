@@ -12,11 +12,11 @@ const Navbar = () => {
   };
 
   const menuItems = [
-    { text: "Home", path: "/" },
+    { text: "Home", path: "/dashboard" },
     { text: "Culture", path: "/culture" },
     { text: "Employment", path: "/employment" },
     { text: "Resources", path: "/resources" },
-    { text: "Translator", path: "/translation"},
+    { text: "Translator", path: "/translation" },
   ];
 
   return (
