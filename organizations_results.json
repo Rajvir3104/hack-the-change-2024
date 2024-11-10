@@ -268,5 +268,15 @@
       "website": "https://ifssa.ca/"
     },
     "location": "Edmonton Area"
+  },
+  {
+    "name": "Aaryan and Rajvir Foundation",
+    "description": "Foundation to empower recent immigrants.",
+    "contact": {
+      "phone": "780-322-3232",
+      "email": "rajvir.singh@gmail.com",
+      "website": "https://aaryandhand.com/"
+    },
+    "location": "Red Deer, AB"
   }
 ]
