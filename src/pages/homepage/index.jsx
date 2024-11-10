@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { gapi } from 'gapi-script';
 import React, { useEffect } from 'react';
 import Community_image from "../../assets/Community_Image.png";
@@ -5,12 +6,14 @@ import Discover_image from "../../assets/Discover_Image.png";
 import Employment_image from "../../assets/Employment_Image.png";
 import videoPath from "../../assets/pathways-hero-clip.mp4";
 import Translation_image from "../../assets/Translation_Image.png";
+import GoogleTranslate from '../../components/GoogleTranslate.jsx'; // Import the GoogleTranslate component
 import LoginButton from "../login";
 import './style.css';
 
 const clientId = process.env.REACT_APP_CLIENT_ID;
 
 const Homepage = () => {
+  const [showTranslate, setShowTranslate] = useState(false);
 
   useEffect(() => {
     const start = () => {
@@ -33,14 +36,21 @@ const Homepage = () => {
 
   return (
     <div>
+      <GoogleTranslate isVisible={showTranslate} />
       <div className="hero-container">
         <div className="hero-overlay">
           <div className="hero-content">
             <h1>Welcome to <span className='blue-tag'>Pathways</span></h1>
             <p>Your bridge to resources, community, and support.</p>
             <p>
+
               <LoginButton />
-              <button className="cta-button">Translate</button>
+              <button 
+                className="cta-button" 
+                onClick={() => setShowTranslate(prev => !prev)} // Toggle widget visibility
+              >
+                Translate
+              </button>
             </p>
             <p>Take a peak at our mission <a href="#translation-heading" className='blue-tag-link' onClick={smoothScroll}>below!</a></p>
           </div>
