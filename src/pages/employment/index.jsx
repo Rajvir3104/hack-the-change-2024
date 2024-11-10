@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import JobCard from '../../components/card';
+import JobCard from '../../components/jobcard';
 import './style.css';
 
 const Employment = () => {
