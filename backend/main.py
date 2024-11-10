@@ -32,9 +32,9 @@ def before_request():
 
 
 # Register blueprints with URL prefixes
-app.register_blueprint(jobpostingroutes, url_prefix='/JobPostings')
-app.register_blueprint(eventpostingroutes, url_prefix='/Events')
-app.register_blueprint(organizationroutes, url_prefix='/Organizations')
+app.register_blueprint(jobpostingroutes)
+app.register_blueprint(eventpostingroutes)
+app.register_blueprint(organizationroutes)
 
 
 
