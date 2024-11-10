@@ -5,6 +5,7 @@ body::-webkit-scrollbar {
   
   body {
     overflow: scroll; /* Allows scrolling */
+    background: #fff;
   }
   
 /* Hero Section Container */

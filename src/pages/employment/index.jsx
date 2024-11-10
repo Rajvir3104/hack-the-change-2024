@@ -30,6 +30,7 @@ const Employment = () => {
         <JobCard
           key={index}
           Title={job.Title}
+          CompanyName={job.CompanyName}
           Desc={job.Desc}
           Location={job.Location}
           DatePosted={job.DatePosted}
