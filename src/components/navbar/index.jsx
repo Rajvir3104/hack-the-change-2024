@@ -16,6 +16,7 @@ const Navbar = () => {
     { text: "Culture", path: "/culture" },
     { text: "Employment", path: "/employment" },
     { text: "Resources", path: "/resources" },
+    { text: "Translator", path: "/translation"},
   ];
 
   return (
