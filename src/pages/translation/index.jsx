@@ -1,60 +1,60 @@
 import React, { useState } from "react";
-import FileUpload from "../../components/FileUpload"; // Import FileUpload component
-import { parsePDF } from "../../components/pdfParser"; // Import PDF parsing utility
-import TranslationForm from "../../components/TranslationForm"; // Import TranslationForm component
-import { translateText } from "../../components/TranslateService"; // Import PDF parsing utility
+import FileUpload from "../../components/FileUpload";
+import { parsePDF } from "../../components/pdfParser";
+import TranslationForm from "../../components/TranslationForm";
+import { translateText } from "../../components/TranslateService";
 
+const Translation = () => {
+  const [extractedText, setExtractedText] = useState("");
+  const [translatedText, setTranslatedText] = useState("");
+  const [targetLanguage, setTargetLanguage] = useState("es");
+  const [loading, setLoading] = useState(false); // Loading state
 
-const Homepage = () => {
-  const [extractedText, setExtractedText] = useState(""); // Store the extracted text
-  const [translatedText, setTranslatedText] = useState(""); // Store the translated text
-  const [targetLanguage, setTargetLanguage] = useState("es"); // Default target language (Spanish)
-
-  // Function to handle file upload and parse PDF
   const handleFileUpload = async (file) => {
-    const text = await parsePDF(file); // Parse the uploaded PDF file
-    setExtractedText(text); // Set the extracted text from PDF
-    setTranslatedText(""); // Clear previous translation when a new file is uploaded
-  };
-
-  // Function to handle translation
-  const handleTranslation = async (text) => {
-    if (!text) return;
-
     try {
-      // Call the translation API to translate the text
-      const translated = await translateText(text, targetLanguage); // Replace with your actual translation logic
-      setTranslatedText(translated); // Set the translated text
+      const text = await parsePDF(file);
+      setExtractedText(text);
+      setTranslatedText("");
     } catch (error) {
-      console.error("Translation failed:", error);
+      console.error("Failed to parse PDF:", error);
+      setExtractedText("Failed to parse PDF. Please try again.");
     }
   };
+
+  const handleTranslation = async () => {
+    if (!extractedText) return;
+  
+    setLoading(true); // Set loading state
+    try {
+      const translated = await translateText(extractedText, targetLanguage);
+      setTranslatedText(translated);
+    } catch (error) {
+      console.error("Translation failed:", error);
+      setTranslatedText(error.message); // Display the error message to the user
+    } finally {
+      setLoading(false); // Reset loading state
+    }
+  };
+  
 
   return (
     <div>
       <h1>PDF Translation Tool</h1>
-
-      {/* File Upload Component */}
       <FileUpload onFileUpload={handleFileUpload} />
-
-      {/* Display Extracted Text */}
       {extractedText && (
         <div>
           <h3>Extracted Text:</h3>
           <p>{extractedText}</p>
         </div>
       )}
-
-      {/* Translation Form Component */}
       {extractedText && (
         <TranslationForm
           extractedText={extractedText}
-          setTargetLanguage={setTargetLanguage} // Pass the function to set target language
-          handleTranslation={handleTranslation} // Function to handle translation
+          setTargetLanguage={setTargetLanguage}
+          handleTranslation={handleTranslation}
         />
       )}
-
-      {/* Display Translated Text */}
+      {loading && <p>Translating...</p>}
       {translatedText && (
         <div>
           <h3>Translated Text:</h3>
@@ -65,4 +65,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Translation;

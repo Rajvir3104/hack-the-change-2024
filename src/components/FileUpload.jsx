@@ -9,7 +9,7 @@ const FileUpload = ({ onFileUpload }) => {
 
   const handleFileUpload = () => {
     if (selectedFile) {
-      onFileUpload(selectedFile); // Pass the selected file to parent component
+      onFileUpload(selectedFile);
     }
   };
 

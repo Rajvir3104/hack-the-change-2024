@@ -1,6 +1,5 @@
 import { GlobalWorkerOptions, getDocument } from 'pdfjs-dist';
 
-// Set the worker source    
 GlobalWorkerOptions.workerSrc = `${process.env.PUBLIC_URL}/pdf.worker.mjs`;
 
 export const parsePDF = (file) => {
